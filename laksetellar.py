@@ -1,11 +1,11 @@
-antallLaks =ut("Hvor mange lakser vil du ha?"))
+antallLaks = int(input("Hvor mange lakser vil du ha?"))
 
 def laksefunksjon(x):
-    if antallLaks == 1:
+    if x == 1:
         print("1 laks")
-    elif antallLaks > 1:
+    elif x > 1:
         print("1 laks")
-        for x in range(2, antallLaks+1):
+        for x in range(2, x+1):
             print(x, "laksar")
 
 laksefunksjon(antallLaks)
